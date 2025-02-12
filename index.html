@@ -21,7 +21,16 @@
     <div id="shine">Happy Valentine's Day💞</div>
   </div>
 
-
+  <script>
+    $(document).ready(function () {
+      var audio = new Audio('audio/lagu.mp3');
+      $("#tombol").click(function () {
+        $("#kontener2").fadeOut();
+        $("#kontener").fadeIn("4000");
+        audio.play();
+      });
+    });
+  </script>
   <div class="gallery">
     <img src="assets/image/foto1.png" alt="love you">
     <img src="assets/image/foto2.png" alt="love you">
